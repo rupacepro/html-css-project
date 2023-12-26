@@ -1,0 +1,161 @@
+/* 
+    Group Members:
+    1. Bibishan Pandey
+    2. Channpreet Singh
+    3. Rupesh Shrestha.
+    4. Kabita Shrestha
+
+    Project: Terrace Fitness Club
+    Course: CSD 1103 - Web Development
+    Page: Products
+    Author: Channpreet Singh
+*/
+
+/* Main section margin */
+main {
+    margin-bottom: 2rem;
+}
+
+/* Full-width for audio section for mobile view */
+audio {
+    width: 100%;
+}
+
+/* Padding for the products section */
+.products {
+    padding: 2rem;
+}
+
+/* Using Flex for the product list */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Makes the image size and style Responsive */
+.product img {
+    width: 100%;
+    height: 23vh;
+    object-fit: cover;
+}
+
+/* Styles each product */
+.product {
+    width: 100%;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover when points on product */
+.product:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles Title product */
+.product h3 {
+    font-size: 1rem;
+    margin: 0 1rem;
+    padding-top: 1rem;
+}
+
+/* Product Title */
+.product-title {
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem;
+    margin: 0;
+}
+
+/* Products price Styling */
+.product-price {
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Buy button container */
+.product-buy-cart {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+/* Buy button Styling */
+.product-buy-cart button {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Cart button Styling */
+.btn-cart {
+    background-color: #FFC107;
+}
+
+/* Hover style when points on Cart button */
+.btn-cart:hover {
+    background-color: #FFCA28;
+}
+
+/* Buy button Styling */
+.btn-buy {
+    background-color: #008CFF;
+}
+
+/* Hover style when points on Buy button */
+.btn-buy:hover {
+    background-color: #0091FF;
+}
+
+/* Media query for tablet-sized screens */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Adjusting layout for medium-sized screens */
+    .product-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Adjusting individual product size */
+    .product {
+        max-width: 48%;
+    }
+
+    /* Adjusting audio width */
+    audio {
+        width: 50%;
+    }
+}
+
+/* Media query for larger screens */
+
+@media screen and (min-width: 769px) {
+    /* Adjusting layout for larger screens */
+    .product-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Adjusting individual product size */
+    .product {
+        max-width: 31.5%;
+    }
+
+    /* Adjusting audio width */
+    audio {
+        width: 30%;
+    }
+}

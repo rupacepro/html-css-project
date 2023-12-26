@@ -1,0 +1,263 @@
+<!-- 
+    Group Members:
+    1. Bibishan Pandey
+    2. Channpreet Singh
+    3. Rupesh Shrestha
+    4. Kabita Shrestha
+
+    Project: Terrace Fitness Club
+    Course: CSD 1103 - Web Development
+    Page: Homepage
+    Author: Bibishan Pandey
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrace Fitness Club</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <!-- Header and navigation links -->
+    <div id="header-container" class="container">
+        <!-- Header element for your website logo -->
+        <header>
+            <a href="index.html" aria-label="Home page">
+                <img src="../img/logo.png" alt="Terrace Fitness Club">
+                <p>Terrace Fitness Club</p>
+            </a>
+            <button id="nav-toggle" onclick="menuToggler()" aria-label="Open navigation menu">☰</button>
+        </header>
+
+        <!-- Navigation element with important navigation links -->
+        <nav>
+            <ul id="navigations">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main element highlighting your content -->
+    <main>
+        <!-- Banner section with gym background and gradient background overlay
+            with two headings set as mix blend mode to give different colors based on
+            background image
+        -->
+        <section class="banner gradient-banner">
+            <div class="container">
+                <h5 class="banner-subtitle">Achieve your fitness goal</h5>
+                <h1 class="banner-title">Find your strength inside and out.</h1>
+            </div>
+        </section>
+
+        <!-- Offer section -->
+        <section class="container">
+            <h1 class="section-title text-center">What do we offer?</h1>
+
+            <!-- Offer card list -->
+            <div class="offer-cards">
+
+                <!-- Individual offer card -->
+                <div class="offer-card">
+                    <!-- Offer logo -->
+                    <div class="logo-content">
+                        <!-- Relative image url -->
+                        <img src="../img/result-logo.png" alt="Best Result">
+                        <h1>Best Results Guaranteed</h1>
+                    </div>
+                    <p>If you train with our trainers</p>
+
+                    <!-- Link that does nothing -->
+                    <a href="#">Know More</a>
+                </div>
+
+                <!-- Individual offer card -->
+                <div class="offer-card">
+                    <!-- Offer logo -->
+                    <div class="logo-content">
+                        <!-- Relative image url -->
+                        <img src="../img/medic-logo.png" alt="In-House Medic">
+                        <h1>In-House Medic Available</h1>
+                    </div>
+                    <p>That suits your body type</p>
+
+                    <!-- Link that does nothing -->
+                    <a href="#">Know More</a>
+                </div>
+
+                <!-- Individual offer card -->
+                <div class="offer-card">
+                    <!-- Offer logo -->
+                    <div class="logo-content">
+                        <!-- Relative image url -->
+                        <img src="../img/workout-logo.png" alt="Targeted Workout">
+                        <h1>Targeted Workouts</h1>
+                    </div>
+                    <p>Check your health</p>
+
+                    <!-- Link that does nothing -->
+                    <a href="#">Know More</a>
+                </div>
+
+                <!-- Individual offer card -->
+                <div class="offer-card">
+                    <!-- Offer logo -->
+                    <div class="logo-content">
+                        <!-- Relative image url -->
+                        <img src="../img/time-logo.png" alt="Convenient Time">
+                        <h1>Convenient Time Workouts</h1>
+                    </div>
+                    <p>Workout at your best time</p>
+
+                    <!-- Link that does nothing -->
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message section with video as background -->
+        <section id="message-content">
+            <!-- Video as background -->
+            <video autoplay muted loop playsinline>
+                <source src="../media/video/Intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Gradient background overlay above video -->
+            <div class="overlay"></div>
+
+            <!-- Message content -->
+            <div class="container z-10 message-content-text">
+                <div class="message">
+                    <h1 class="offer-title">Today&apos;s Fitness Message</h1>
+                    <p>The World Health Organization recommends that adults 18-65 get "30 minutes of moderate-intensity
+                        physical activity five days per week" or "20 minutes of vigorous-intensity physical activity
+                        three days per week."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities section -->
+        <section class="container">
+            <h1 class="section-title text-center">Our Activities</h1>
+
+            <!-- Activity cards list -->
+            <div class="activity-cards">
+
+                <!-- Individual activity card -->
+                <div class="activity-card">
+                    <!-- Activity card image -->
+                    <div class="activity-img">
+                        <!-- Image with external URL -->
+                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Body Works">
+                    </div>
+
+                    <!-- Activity description -->
+                    <div class="activity-description">
+                        <h1>Body Works</h1>
+                        <p>Make the muscles of your body larger and stronger through tension and exercises such as
+                            lifting weights. Professional training with Kevin... </p>
+                    </div>
+                </div>
+
+                <!-- Individual activity card -->
+                <div class="activity-card">
+                    <!-- Activity card image -->
+                    <div class="activity-img">
+                        <!-- Image with external URL -->
+                        <img src="https://images.unsplash.com/photo-1526889588514-2e695856df85?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Martial Arts">
+                    </div>
+
+                    <!-- Activity description -->
+                    <div class="activity-description">
+                        <h1>Martial Arts</h1>
+                        <p>← Back to timetable MMA Mixed Martial Arts training gym with Boxing, Kung-Fu, Thai Boxing
+                            for beginners to professionals. Professional... </p>
+                    </div>
+                </div>
+
+                <!-- Individual activity card -->
+                <div class="activity-card">
+                    <!-- Activity card image -->
+                    <div class="activity-img">
+                        <!-- Image with external URL -->
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Powered Fitness">
+                    </div>
+
+                    <!-- Activity description -->
+                    <div class="activity-description">
+                        <h1>Powered Fitness</h1>
+                        <p>Power Fitness training is exercise that raises your heart rate enough to deliver oxygen to
+                            the muscles. When done regularly, it... </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer element with copyright and other information -->
+    <footer class="container">
+        <div class="footer-content">
+            <!-- Footer copyright and following links -->
+            <div class="footer-div-content w-full">
+                <p>&copy; 2023 Terrace Fitness Club. All rights reserved.</p>
+                <div class="footer-icon-links">
+                    <a target="_blank" href="https://www.linkedin.com" class="footer-icon-links">
+                        <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                        <img src="../img/linkedin-logo.png" width="30" height="30" alt="Linkedin">
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com" class="footer-icon-links">
+                        <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                        <img src="../img/facebook-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                    <a target="_blank" href="https://www.twitter.com" class="footer-icon-links">
+                        <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                        <img src="../img/twitter-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer message element -->
+            <div class="footer-div-content">
+                <p>Step into Terrace Fitness Club, where the only thing heavier than our weights is the laughter echoing
+                    through our gym! Embrace the burn, feel the fun, and sculpt your way to a healthier, happier you.
+                    Because who said workouts couldn't be a party? Unleash your inner fitness fanatic with a side of
+                    humor at Terrace Fitness Club - where the only thing we take seriously is your well-being. Join us,
+                    because breaking a sweat has never been this entertaining!</p>
+            </div>
+
+            <!-- Footer navigation elements -->
+            <div class="footer-div-content">
+                <ul id="footer-navigations">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add script file to handle toggle for navigation menu -->
+    <script src="../js/global.js"></script>
+</body>
+
+</html>

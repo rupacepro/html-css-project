@@ -1,0 +1,235 @@
+<!-- 
+    Group Members:
+    1. Bibishan Pandey
+    2. Channpreet Singh
+    3. Rupesh Shrestha
+    4. Kabita Shrestha
+
+    Project: Terrace Fitness Club
+    Course: CSD 1103 - Web Development
+    Page: About
+    Author: Rupesh Shrestha
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrace Fitness Club</title>
+
+    <!-- Favicon and stylesheets -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+</head>
+
+<body>
+    <!-- Header and navigation links -->
+    <div id="header-container" class="container">
+        <!-- Header element for website logo -->
+        <header>
+            <!-- Logo and site name with a link to the home page -->
+            <a href="index.html" aria-label="Home page">
+                <img src="../img/logo.png" alt="Terrace Fitness Club">
+                <p>Terrace Fitness Club</p>
+            </a>
+            <!-- Button to toggle navigation menu -->
+            <button id="nav-toggle" onclick="menuToggler()" aria-label="Open navigation menu">☰</button>
+        </header>
+
+        <!-- Navigation element with important navigation links -->
+        <nav>
+            <ul id="navigations">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content of the About page -->
+    <main>
+        <!-- section for background image -->
+        <section id="about-bg">
+            <!-- About us page heading -->
+            <div class="about-heading" id="about-txt">
+                <h2>ABOUT US</h2>
+                <hr id="about-hr">
+            </div>
+        </section>
+        <section id="about-main">
+            <!-- section which includes a video and short description of the company -->
+            <section class="content">
+                <!-- Video with controls, loop, and autoplay -->
+                <video id="order-2" class="about-img" controls loop autoplay muted>
+                    <source src="../media/video/Intro.mp4" type="video/mp4">
+                    <p>Your browser does not support the video tag</p>
+                </video>
+
+                <!-- Subsection with heading, description, and audio -->
+                <section>
+                    <h3>Why Terrace Fitness Club?: <span>The best value on the planet</span></h3>
+                    <p>We create an environment where you can relax, go at your own pace, and do your own thing without
+                        ever having to worry about being judged.
+                    </p>
+                    <!-- added audio for accessibility -->
+                    <audio controls>
+                        <source src="../media/audio/Why Terrace Fitness.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </section>
+            </section>
+            <!-- Divider -->
+            <hr class="content-divider">
+            <section class="content">
+                <!-- Section with image and description -->
+                <img class="about-img" src="../img/four-international-student.jpg" alt="image 1">
+                <section>
+                    <h3>The People: <span>Four International Students</span></h3>
+                    <p>
+                        As Founders, we will probably move the focal point of wellness from “me” to “we” by
+                        utilizing the <a id='link'
+                            href="https://www.livewelldorset.co.uk/faq/get-active/group-exercise-vs-individual-exercise/"
+                            target="_blank">group-based exercise</a> to saddle the inspiration, network, and
+                        responsibility.
+                    </p>
+                    <!-- added audio for accessibility -->
+                    <audio controls>
+                        <source src="../media/audio/The People Four Inte.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </section>
+            </section>
+            <!-- title for benefits section -->
+            <div>
+                <h2 class="about-heading">KEY BENEFITS</h2>
+                <hr id="about-hr">
+            </div>
+            <!-- benefits section -->
+            <div id="benefits">
+                <!-- Individual benefit sections -->
+                <section class="benefits" id="benefits-1">
+                    <h3>OPEN 7 DAYS</h3>
+                    <p>Our club is open 7 days a week. We work to fit your schedule, not the other way around. Check
+                        hours of operations <a id='link' href="./contact.html">here</a>.</p>
+                </section>
+                <hr class="benefits-divider">
+                <section class="benefits" id="benefits-2">
+                    <h3>CLEAN, SPACIOUS FACILITIES</h3>
+                    <p>From front lobby and fitness machines to locker rooms and showers, a clean club is one of our top
+                        priorities.</p>
+                </section>
+                <hr class="benefits-divider">
+                <section class="benefits">
+                    <h3>TONS OF EQUIPMENT</h3>
+                    <p>A variety of high-quality, brand-name cardio and strength equipment is available.</p>
+                </section>
+                <hr class="benefits-divider">
+                <section id="more-content" class="benefits">
+                    <h3>FRIENDLY STAFF</h3>
+                    <p>They’re ready to give you a warm welcome and eager to help you however they can.<span
+                            class="more-content"> Any time you
+                            need assistance or have a question, our club staff is at your service.</span>
+                    </p>
+                </section>
+            </div>
+            <!-- heading for teams section -->
+            <div>
+                <h2 class="about-heading">OUR TEAM</h2>
+                <hr id="about-hr">
+            </div>
+            <!-- teams section -->
+            <div id="teams">
+                <a class="indivisual-pic">
+                    <!-- Individual team members with images and roles -->
+                    <img class="teams-img" src="../img/team-1.jpg" alt="">
+                    <h3>
+                        <span class="name">Kabita</span>
+                        <br>
+                        <span class="name">Shrestha</span>
+                        <br>
+                        <span class="role">Fitness Instructor</span>
+                    </h3>
+                </a>
+                <a class="indivisual-pic">
+                    <img class="teams-img" src="../img/team-2.jpg" alt="">
+                    <h3>
+                        <span class="name">Chanpreet</span>
+                        <br>
+                        <span class="name">Singh</span>
+                        <br>
+                        <span class="role">Fitness Instructor</span>
+                    </h3>
+                </a>
+                <a class="indivisual-pic">
+                    <img class="teams-img" src="../img/team-3.jpg" alt="">
+                    <h3>
+                        <span class="name">Bibishan</span>
+                        <br>
+                        <span class="name">Pandey</span>
+                        <br>
+                        <span class="role">Fitness Instructor</span>
+                    </h3>
+                </a>
+                <a class="indivisual-pic">
+                    <img class="teams-img" src="../img/team-4.jpg" alt="">
+                    <h3>
+                        <span class="name">Rupesh</span>
+                        <br>
+                        <span class="name">Shrestha</span>
+                        <br>
+                        <span class="role">Fitness Instructor</span>
+                    </h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer element with copyright and other information -->
+    <footer class="container" id="about-footer">
+        <div class="footer-content">
+            <!-- Copyright and social media icons -->
+            <div class="footer-div-content w-full">
+                <p>&copy; 2023 Terrace Fitness Club. All rights reserved.</p>
+                <div class="footer-icon-links">
+                    <a target="_blank" href="https://www.linkedin.com" class="footer-icon-links">
+                        <img src="../img/linkedin-logo.png" width="30" height="30" alt="Linkedin">
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com" class="footer-icon-links">
+                        <img src="../img/facebook-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" class="footer-icon-links">
+                        <img src="../img/twitter-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-div-content">
+                <p>Step into Terrace Fitness Club, where the only thing heavier than our weights is the laughter
+                    echoing
+                    through our gym! Embrace the burn, feel the fun, and sculpt your way to a healthier, happier
+                    you.
+                    Because who said workouts couldn't be a party? Unleash your inner fitness fanatic with a side of
+                    humor at Terrace Fitness Club - where the only thing we take seriously is your well-being. Join
+                    us,
+                    because breaking a sweat has never been this entertaining!</p>
+            </div>
+            <div class="footer-div-content">
+                <ul id="footer-navigations">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add script file to handle toggle for navigation menu -->
+    <script src="../js/global.js"></script>
+</body>
+
+</html>

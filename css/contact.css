@@ -1,0 +1,354 @@
+/* 
+    Group Members:
+    1. Bibishan Pandey
+    2. Channpreet Singh
+    3. Rupesh Shrestha.
+    4. Kabita Shrestha
+
+    Project: Terrace Fitness Club
+    Course: CSD 1103 - Web Development
+    Page: Contact
+    Author: Kabita Shrestha
+*/
+
+/* Adds content before the contact-banner element.
+    Adding a background image before the actual content
+    so as to give in overlay effect. */
+#contact-banner::before {
+    /* Empty content */
+    content: "";
+
+    background: url("https://images.unsplash.com/photo-1595280503243-a79c68afe418?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Opacity of the image */
+    opacity: 0.5;
+}
+
+/* Selector for contact-banner element with gradient background
+    on top of the image background we kept just above to give
+    linear gradient overlay over the image */
+#contact-banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    /* Sets minimum height to 50vh (viewport height - no matter the screen size) */
+    min-height: 50vh;
+
+    /* Cross platform browser compatibility */
+    /* Linear gradient starting at an angle of 138 degree */
+    background: -o-linear-gradient(138deg, rgba(243, 159, 220, 0.4) 0%, rgba(255, 195, 195, 0.8) 100%);
+    background: -moz-linear-gradient(138deg, rgba(243, 159, 220, 0.4) 0%, rgba(255, 195, 195, 0.8) 100%);
+    background: -webkit-linear-gradient(138deg, rgba(243, 159, 220, 0.4) 0%, rgba(255, 195, 195, 0.8) 100%);
+    background: linear-gradient(138deg, rgba(243, 159, 220, 0.4) 0%, rgba(255, 195, 195, 0.8) 100%);
+}
+
+/* Style for h1 tags that are inside #contact-banner element */
+#contact-banner h1 {
+    position: relative;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-transform: uppercase;
+    width: 100%;
+
+    /* Blends the text color with the background color */
+    mix-blend-mode: color-burn;
+}
+
+/* Style for p tags that are inside #contact-banner element */
+#contact-banner p {
+    position: relative;
+    text-transform: uppercase;
+    color: #008CFF;
+    font-size: 1.2rem;
+    width: 100%;
+
+    /* Blends the text color with the background color */
+    mix-blend-mode: color-burn;
+}
+
+/* Style for contact-cards section using flex */
+#contact-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+/* Style for contact-card section */
+.contact-card {
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem;
+    min-height: 23vh;
+    width: 100%;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+/* Style for contact-card section on hover */
+.contact-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for contact-card section's a tag */
+.contact-card a {
+    text-decoration: none;
+    color: #008CFF;
+    font-size: 0.7rem;
+}
+
+/* Style for contact-card section's a tag on hover */
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Style for contact hours section */
+#contact-hours {
+    padding: 2rem 0;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Style for contact hours section's h1 tag */
+#contact-hours h1 {
+    color: #008CFF;
+}
+
+/* Style for contact hours section's table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    padding: 5rem;
+}
+
+/* Style for contact hours section's th and td tags */
+th,
+td {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Selects the first child of th and td tags
+    and adds a border to the right of the element */
+th:first-child,
+td:first-child {
+    border-right: 1px solid #fff;
+}
+
+/* Selects every even child of th and td tags
+    and adds a background color to the element
+    to give alternate rows of table different colors */
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Aligns the text to left */
+th {
+    text-align: left;
+}
+
+/* Styles the child tr tag(s) only for those inside thead tags*/
+thead tr {
+    background-color: #ccc;
+    border-bottom: 1px solid #fff;
+    font-size: 1.2rem;
+}
+
+/* Align text to the end of the element */
+.table-hours {
+    text-align: end;
+}
+
+/* Style for contact form section's input and textarea elements */
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+}
+
+/* Style for contact form section's button element */
+.button {
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Styles button with blue background */
+/* Used in contact form's submit button */
+.blue-button {
+    background-color: #008CFF;
+}
+
+/* Styles button's hover with blue background */
+.blue-button:hover {
+    background-color: #0077E6;
+}
+
+/* Styles button with white background */
+/* Used in subscribe form's submit button */
+.white-button {
+    background-color: white;
+    color: #008CFF;
+}
+
+/* Styles button's hover with white background */
+.white-button:hover {
+    background-color: #fafafa;
+}
+
+/* Style for form and map section */
+#contact-with-map {
+    display: flex;
+
+    /* Two div's take full width in mobile view because of column */
+    flex-direction: column;
+
+    /* Calculating and setting min height by subtracting 5rem (height of navbar/header) */
+    /* 100vh height represents full screen height (viewport height/vh) */
+    min-height: calc(100vh - 5rem);
+}
+
+/* Overriding default style for map's iframe */
+#contact-map {
+    width: 100%;
+    min-height: calc(100vh - 5rem);
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Sets min height to the remaining height excluding navbar/header */
+.min-h-calc-5rem {
+    min-height: calc(100vh - 5rem);
+}
+
+/* Styles message content that floats over map using sticky position */
+.map-title {
+    margin: 9rem 0.6rem 0.6rem 0.6rem;
+    position: sticky;
+    top: 7rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    color: #333;
+    font-weight: bolder;
+    box-shadow: 0 0.5em 4rem rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+
+    /* To make sure the content is on top of the map */
+    z-index: 1;
+
+    /* Adds blur effect to the background */
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(1em);
+}
+
+/* Style for contact-subscribe content */
+#contact-subscribe-banner {
+    padding: 2rem 0;
+}
+
+/* Style for subscribe form element */
+#subscribe-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Styles for tablets */
+/* Sizes starting 481px to including 768px applies the following styles */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Style contact banners heading element's font size */
+    #contact-banner h1 {
+        font-size: 2rem;
+    }
+
+    /* Style contact cards list using rows instead of column */
+    #contact-cards {
+        flex-flow: wrap;
+        flex-direction: row;
+    }
+
+    /* Contact card takes almost 50% width individually */
+    .contact-card {
+        width: 48% !important;
+    }
+
+    /* Resize subscribe form width and set elements side by side in a row */
+    #subscribe-form {
+        width: 70%;
+        flex-direction: row;
+    }
+}
+
+/* Styles for desktop */
+/* Sizes starting 769px to above applies the following styles */
+@media screen and (min-width: 769px) {
+
+    /* Reset contact-with-map section to display two elements 
+        side by side on the same row */
+    #contact-with-map {
+        flex-direction: row;
+    }
+
+    /* Style contact banners heading element's font size */
+    #contact-banner h1 {
+        font-size: 3.2rem;
+    }
+
+    /* Style contact cards list using rows instead of column */
+    #contact-cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /* Contact card takes 31% width individually */
+    .contact-card {
+        width: 31% !important;
+    }
+
+    /* Add padding to make the table tags consistent with the design */
+    th,
+    td {
+        padding: 1rem 5rem;
+    }
+
+    /* Resize subscribe form width and set elements side by side in a row */
+    #subscribe-form {
+        width: 60%;
+        flex-direction: row;
+    }
+}

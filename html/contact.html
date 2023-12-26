@@ -1,0 +1,292 @@
+<!-- 
+    Group Members:
+    1. Bibishan Pandey
+    2. Channpreet Singh
+    3. Rupesh Shrestha
+    4. Kabita Shrestha
+
+    Project: Terrace Fitness Club
+    Course: CSD 1103 - Web Development
+    Page: Contact
+    Author: Kabita Shrestha
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrace Fitness Club</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <!-- Header and navigation links -->
+    <div id="header-container" class="container">
+        <!-- Header element for your website logo -->
+        <header>
+            <!-- Brand logo and brand text of the app -->
+            <a href="index.html" aria-label="Home page">
+                <img src="../img/logo.png" alt="Terrace Fitness Club">
+                <p>Terrace Fitness Club</p>
+            </a>
+
+            <!-- Menu button for smaller screens -->
+            <button id="nav-toggle" onclick="menuToggler()" aria-label="Open navigation menu">☰</button>
+        </header>
+
+        <!-- Navigation element with important navigation links -->
+        <nav>
+            <ul id="navigations">                                                                                                                                                               
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main>
+        <!-- Contact banner section -->
+        <!-- This id contains background image as background -->
+        <section id="contact-banner">
+            <div class="container">
+                <h1>Contact our friendly team</h1>
+                <p>Let us know how we can help.</p>
+            </div>
+        </section>
+
+        <!-- Support section with light gray background -->
+        <div class="bg-light-gray border-b-black">
+            <section class="container">
+                <!-- Support card list -->
+                <div id="contact-cards">
+
+                    <!-- Single support/contact card -->
+                    <div class="contact-card">
+                        <div class="w-full">
+                            <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                            <img src="../img/chat-logo.png" width="30" height="30" alt="Chat">
+                            <h4>Chat to sales</h4>
+                            <p>Speak to our friendly team.</p>
+                        </div>
+
+                        <!-- Link that connects to mail -->
+                        <a href="mailto:terracefitness@sales.net">terracefitness@sales.net</a>
+                    </div>
+
+                    <!-- Single support/contact card -->
+                    <div class="contact-card">
+                        <div class="w-full">
+                            <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                            <img src="../img/chat-support.png" width="30" height="30" alt="Chat">
+                            <h4>Chat to support</h4>
+                            <p>We&apos; here to help.</p>
+                        </div>
+
+                        <!-- Link that connects to mail -->
+                        <a href="mailto:terracefitness@support.net">terracefitness@support.net</a>
+                    </div>
+
+                    <!-- Single support/contact card -->
+                    <div class="contact-card">
+                        <div class="w-full">
+                            <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                            <img src="../img/map-logo.png" width="30" height="30" alt="Chat">
+                            <h4>Visit us</h4>
+                            <p>Visit our office HQ.</p>
+                        </div>
+
+                        <!-- Link that navigates down to our map section using id #contact-map -->
+                        <a href="#contact-map">65 Muirhead Rd, North York</a>
+                    </div>
+
+                    <!-- Single support/contact card -->
+                    <div class="contact-card">
+                        <div class="w-full">
+                            <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                            <img src="../img/call-logo.png" width="30" height="30" alt="Chat">
+                            <h4>Call us</h4>
+                            <p>Extension available 24/7</p>
+                        </div>
+
+                        <!-- Link that connects to call -->
+                        <a href="tel:+16476126743">+1 647 612 6743</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact hours section that shows our operation hours -->
+        <section id="contact-hours">
+            <div class="container">
+                <h1>Our operation hours</h1>
+                <p>To give our customers the best service, we open all days in a week.</p>
+            </div>
+            <!-- Table tag for operation hours -->
+            <table>
+
+                <!-- Table header tag -->
+                <thead>
+                    <tr class="container">
+                        <th>Days</th>
+                        <th class="table-hours">Available Hours</th>
+                    </tr>
+                </thead>
+
+                <!-- Table body tag -->
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td class="table-hours">6AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td class="table-hours">6AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td class="table-hours">6AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td class="table-hours">6AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td class="table-hours">6AM - 9PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td class="table-hours">9AM - 6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td class="table-hours">9AM - 6PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact us form section -->
+        <div class="border-b-black">
+            <section id="contact-with-map">
+                <!-- Form section takes half width in larger screen, else takes full -->
+                <div class="container w-full">
+                    <h1 class="section-title">Need more detail about us?</h1>
+                    <h3 class="section-subtitle">Leave your contact information and we will be in touch shortly.</h3>
+
+                    <!-- Form element that posts the entered details and navigates back to homepage -->
+                    <form id="form-section" action="index.html" method="post">
+                        <label for="name">Your Name</label>
+                        <!-- Required name input with placeholder -->
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+
+                        <label for="email">Email Address</label>
+                        <!-- Required email input with placeholder -->
+                        <input type="email" id="email" name="email" required placeholder="johndoe@email.com">
+
+                        <label for="message">Message</label>
+                        <!-- Required feedback input with placeholder -->
+                        <textarea id="message" name="message" rows="10" required
+                            placeholder="Your feedback here"></textarea>
+
+                        <!-- Submit button with blue background -->
+                        <button class="button blue-button" type="submit">Get in touch</button>
+                    </form>
+                </div>
+
+                <!-- Map section takes half width in larger screen, else takes full -->
+                <div class="w-full relative min-h-calc-5rem">
+                    <!-- Message content that floats over map using sticky positioning -->
+                    <div class="map-title">
+                        <p>We&apos;re located here &DownArrow; &DownArrow; &DownArrow;</p>
+                    </div>
+
+                    <!-- Map -->
+                    <iframe id="contact-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.6699418784706!2d-79.3401982746137!3d43.779709794240574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d2f855eefc41%3A0xc985d284169ecab6!2s65%20Muirhead%20Rd%2C%20North%20York%2C%20ON%20M2J%203W4!5e0!3m2!1sen!2sca!4v1699805273220!5m2!1sen!2sca"
+                        title="Terrace Fitness Club Location"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- Subscribe section with blue background -->
+        <section class="bg-blue" id="contact-subscribe-banner">
+            <div class="container">
+                <p>Get the latest news and updates from Terrace Fitness Club</p>
+                <h1 class="margin-0">Subscribe to our Newsletter</h1>
+
+                <!-- Form element that takes email and submits using post request -->
+                <form id="subscribe-form" action="index.html" method="post">
+                    <input type="email" id="subscribe-email" name="subscribe-email" required
+                        placeholder="Enter your email address">
+                    <button class="button white-button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer element with copyright and other information -->
+    <footer class="container">
+        <div class="footer-content">
+            <!-- Footer copyright and following links -->
+            <div class="footer-div-content w-full">
+                <p>&copy; 2023 Terrace Fitness Club. All rights reserved.</p>
+                <div class="footer-icon-links">
+                    <a target="_blank" href="https://www.linkedin.com" class="footer-icon-links">
+                        <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                        <img src="../img/linkedin-logo.png" width="30" height="30" alt="Linkedin">
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com" class="footer-icon-links">
+                        <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                        <img src="../img/facebook-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                    <a target="_blank" href="https://www.twitter.com" class="footer-icon-links">
+                        <!-- Icon image so width and height set through here as it
+                                should not be responsive, and the whole parent element is responsive. -->
+                        <img src="../img/twitter-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer message element -->
+            <div class="footer-div-content">
+                <p>Step into Terrace Fitness Club, where the only thing heavier than our weights is the laughter echoing
+                    through our gym! Embrace the burn, feel the fun, and sculpt your way to a healthier, happier you.
+                    Because who said workouts couldn't be a party? Unleash your inner fitness fanatic with a side of
+                    humor at Terrace Fitness Club - where the only thing we take seriously is your well-being. Join us,
+                    because breaking a sweat has never been this entertaining!</p>
+            </div>
+
+            <!-- Footer navigation elements -->
+            <div class="footer-div-content">
+                <ul id="footer-navigations">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add script file to handle toggle for navigation menu -->
+    <script src="../js/global.js"></script>
+</body>
+
+</html>

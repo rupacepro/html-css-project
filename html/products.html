@@ -1,0 +1,282 @@
+<!-- 
+    Group Members:
+    1. Bibishan Pandey
+    2. Channpreet Singh
+    3. Rupesh Shrestha
+    4. Kabita Shrestha
+
+    Project: Terrace Fitness Club
+    Course: CSD 1103 - Web Development
+    Page: Products
+    Author: Channpreet Singh
+-->
+
+<!--Studentid: C0904176-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- For Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Terrace Fitness Club</title>
+
+    <!-- Fav icon and CSS -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+    <!-- Header and navigation links -->
+    <div id="header-container" class="container">
+        <!-- Logo and navigation links -->
+        <header>
+            <a href="index.html" aria-label="Home page">
+                <img src="../img/logo.png" alt="Terrace Fitness Club">
+                <p>Terrace Fitness Club</p>
+            </a>
+            <button id="nav-toggle" onclick="menuToggler()" aria-label="Open navigation menu">☰</button>
+        </header>
+
+        <!-- Navigation menu with Navigation links -->
+        <nav>
+            <ul id="navigations">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!--CSS class bg-blue sets the color-->
+        <section class="bg-blue">
+            <div class="container">
+                <div class="message">
+                    <!-- Title and description of fitness packages -->
+                    <h1 class="offer-title">Our Fitness Packages</h1>
+                    <p>Our package is designed for everyone, from beginners to fitness enthusiasts. Get ready to achieve
+                        your muscle-building goals with expert guidance, personalized plans, and easy nutrition tips.
+                        Join our supportive community and start your journey to a stronger, fitter you!"
+                    </p>
+                    <!-- Audio for packages and products -->
+                    <audio controls>
+                        <source src="../media/audio/Our package is desig.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2>Our Packages</h2>
+            <div class="product-list">
+                <!-- fitness package details -->
+                <div class="product">
+                    <div>
+                        <!--Relatve Image url-->
+                        <img src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Muscle Building">
+                        <h3>Muscle Building</h3>
+                        <ul>
+                            <li>1 year training program</li>
+                            <li>Diet Guidance Included</li>
+                            <li>Certified Trainers</li>
+                        </ul>
+                    </div>
+                    <!-- Price and enrollment -->
+                    <div>
+                        <p class="product-price">$79.99</p>
+                        <div class="product-buy-cart">
+                            <button class="btn-buy">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fitness package details -->
+                <div class="product">
+                    <div>
+                        <!--Relatve Image url-->
+                        <img src="https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Resistance Training">
+                        <h3>Resistance Training</h3>
+                        <ul>
+                            <li>4 days per week program</li>
+                            <li>Diet Guidance Included</li>
+                            <li>Certified Trainers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- Price and enrollment -->
+                        <p class="product-price">$89.99</p>
+                        <div class="product-buy-cart">
+                            <!--Button for Enrollment-->
+                            <button class="btn-buy">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fitness package details -->
+                <div class="product">
+                    <div>
+                        <!--Relatve Image url-->
+                        <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Fat loss Training">
+                        <h3>Fat loss Training</h3>
+                        <ul>
+                            <li>4 days per week program</li>
+                            <li>Diet Guidance Included</li>
+                            <li>Certified Trainers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- Price and enrollment -->
+                        <p class="product-price">$99.99</p>
+                        <div class="product-buy-cart">
+                            <!--Button for Enrollment-->
+                            <button class="btn-buy">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <!-- Title and description of Products -->
+            <div class="message">
+                <h1 class="offer-title">Our Products</h1>
+                <p>Packed with the goodness of whey protein for muscle nourishment, weight gainer for balanced calorie
+                    support, healthy greens for essential nutrients, and the creamy richness of butter for a delightful
+                    taste experience, our offerings are a powerhouse of nutrition. Whether you're an athlete aiming for
+                    peak performance or someone dedicated to a healthier lifestyle.
+                </p>
+            </div>
+        </div>
+        <section class="container">
+            <h2>Products</h2>
+            <div class="product-list">
+                <!-- Products details -->
+                <div class="product">
+                    <div>
+                        <!--Relatve Image url-->
+                        <img src="https://images.unsplash.com/photo-1589854522013-6fba220e52b3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Whey Protein">
+                        <h3>Whey Protein</h3>
+                        <ul>
+                            <li>Derived from milk</li>
+                            <li>Blended Amino Acids</li>
+                            <li>Boosts Muscle Stength</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <!-- Price and Buy Button -->
+                        <p class="product-price">$45.99</p>
+                        <div class="product-buy-cart">
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Products details -->
+                <div class="product">
+                    <div>
+                        <!--Relatve Image url-->
+                        <img src="https://images.unsplash.com/photo-1595414902678-862fe51c9f27?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Gainer">
+                        <h3>Gainer</h3>
+                        <ul>
+                            <li>Muscle Mass support</li>
+                            <li>Calorie-rich blend</li>
+                            <li>Nutritional boost</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- Price and Buy Button -->
+                        <p class="product-price">$50.99</p>
+                        <div class="product-buy-cart">
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products details -->
+                <div class="product">
+                    <!--Relatve Image url-->
+                    <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Healthy Greens">
+                    <h3>Healthy Greens</h3>
+                    <ul>
+                        <li>Nutrient superfoods</li>
+                        <li>Boosts overall wellness</li>
+                        <li>Has essential vitamins</li>
+                    </ul>
+                    <!-- Price and Buy Button -->
+                    <p class="product-price">$30.99</p>
+                    <div class="product-buy-cart">
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Products details -->
+                <div class="product">
+                    <!--Relatve Image url-->
+                    <img src="https://images.unsplash.com/photo-1617062598156-23596804ad6d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Butter">
+                    <h3>Butter</h3>
+                    <ul>
+                        <li>Creamy texture addition</li>
+                        <li>Rich flavor enhancement</li>
+                        <li>Natural source of fat</li>
+                    </ul>
+                    <!-- Price and Buy Button -->
+                    <p class="product-price">$10.99</p>
+                    <div class="product-buy-cart">
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer element with copyright and other information -->
+    <footer class="container">
+        <div class="footer-content">
+            <!-- Footer copyright and following links -->
+            <div class="footer-div-content w-full">
+                <p>&copy; 2023 Terrace Fitness Club. All rights reserved.</p>
+                <div class="footer-icon-links">
+                    <a target="_blank" href="https://www.linkedin.com" class="footer-icon-links">
+                        <img src="../img/linkedin-logo.png" width="30" height="30" alt="Linkedin">
+                    </a>
+                    <!-- Social media icons -->
+                    <a target="_blank" href="https://www.facebook.com" class="footer-icon-links">
+                        <img src="../img/facebook-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" class="footer-icon-links">
+                        <img src="../img/twitter-logo.png" width="30" height="30" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <!-- About Terrace Fitness Club -->
+            <div class="footer-div-content">
+                <p>Step into Terrace Fitness Club, where the only thing heavier than our weights is the laughter echoing
+                    through our gym! Embrace the burn, feel the fun, and sculpt your way to a healthier, happier you.
+                    Because who said workouts couldn't be a party? Unleash your inner fitness fanatic with a side of
+                    humor at Terrace Fitness Club - where the only thing we take seriously is your well-being. Join us,
+                    because breaking a sweat has never been this entertaining!</p>
+            </div>
+             <!-- Footer navigation elements -->
+            <div class="footer-div-content">
+                <ul id="footer-navigations">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/global.js"></script>
+</body>
+
+</html>
